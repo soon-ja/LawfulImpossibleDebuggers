@@ -1,5 +1,5 @@
 curl https://api.anthropic.com/v1/messages \
-     --header "x-api-key:$app_key" \
+     --header "x-api-key:myjji90_key" \
      --header "anthropic-version: 2023-06-01" \
      --header "content-type: application/json" \
      --data \
