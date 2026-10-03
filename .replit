@@ -3,4 +3,6 @@ modules = ["python-3.11"]
 [userenv]
 
 [userenv.shared]
-ANTHROPIC_API_KEY = "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"
+
+[nix]
+packages = ["freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "tcl", "tk", "zlib"]
