@@ -38,6 +38,15 @@ author = "agent"
 [workflows.workflow.metadata]
 outputType = "webview"
 
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd chapter05 && python -m streamlit run session_state.py --server.address 0.0.0.0 --server.port 5000 --server.headless true --server.enableWebsocketCompression=false"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
 [[ports]]
 localPort = 8501
 externalPort = 80
