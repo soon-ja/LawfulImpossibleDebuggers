@@ -5,7 +5,19 @@ modules = ["python-3.11"]
 [userenv.shared]
 
 [nix]
-packages = ["freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "tcl", "tk", "zlib"]
+packages = [
+  "freetype",
+  "lcms2",
+  "libimagequant",
+  "libjpeg",
+  "libtiff",
+  "libwebp",
+  "libxcrypt",
+  "openjpeg",
+  "tcl",
+  "tk",
+  "zlib",
+]
 
 [workflows]
 runButton = "Project"
@@ -28,13 +40,16 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd chapter05 && python -m streamlit run logit_1.py --server.address 0.0.0.0 --server.port 5000 --server.headless true --server.enableWebsocketCompression=false"
+args = "cd chapter05 && python -m streamlit run session_state.py --server.address 0.0.0.0 --server.port 5000 --server.headless true --server.enableWebsocketCompression=false"
 waitForPort = 5000
 
 [[ports]]
 localPort = 5000
-externalPort = 80
+externalPort = 5000
 
 [[ports]]
 localPort = 8501
-externalPort = 3001
+externalPort = 80
+
+[agent]
+expertMode = true
