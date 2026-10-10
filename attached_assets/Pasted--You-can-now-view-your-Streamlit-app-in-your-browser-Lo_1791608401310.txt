@@ -1,0 +1,31 @@
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://172.24.0.2:8501
+
+────────────────────────── Traceback (most recent call last) ───────────────────────────
+  /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/sc  
+  riptrunner/exec_code.py:129 in exec_func_with_error_handling                          
+                                                                                        
+  /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/sc  
+  riptrunner/script_runner.py:689 in code_to_exec                                       
+                                                                                        
+  /home/runner/workspace/chapter06/src/app_v1.py:3 in <module>                          
+                                                                                        
+      1 import streamlit as st                                                          
+      2 import logging                                                                  
+  ❱   3 from utils import setup_logging                                                 
+      4                                                                                 
+      5 setup_logging()                                                                 
+      6                                                                                 
+────────────────────────────────────────────────────────────────────────────────────────
+ModuleNotFoundError: No module named 'utils'
+────────────────────────── Traceback (most recent call last) ───────────────────────────
+  /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/sc  
+  riptrunner/exec_code.py:129 in exec_func_with_error_handling                          
+                                                                                        
+  /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/sc  
+  riptrunner/script_runner.py:689 in code_to_exec                                       
+                                                                                        
+  /home/runner/workspace/chapter06/src/app_v1.py:3 in <module>                          
+                                                                               
